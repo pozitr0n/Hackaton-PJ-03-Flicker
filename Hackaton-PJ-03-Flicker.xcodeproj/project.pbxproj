@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4172AC43594A776CD023DCA9 /* Pods_Hackaton_PJ_03_Flicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CDE7AA040AB1D56C027947 /* Pods_Hackaton_PJ_03_Flicker.framework */; };
+		4DBA935829F4D83200399A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA935729F4D83200399A1F /* AppDelegate.swift */; };
+		4DBA935A29F4D83200399A1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA935929F4D83200399A1F /* SceneDelegate.swift */; };
+		4DBA935C29F4D83200399A1F /* BeforeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA935B29F4D83200399A1F /* BeforeViewController.swift */; };
+		4DBA936129F4D83300399A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBA936029F4D83300399A1F /* Assets.xcassets */; };
+		4DBA936429F4D83300399A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBA936229F4D83300399A1F /* LaunchScreen.storyboard */; };
+		4DBA936F29F5A7D500399A1F /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA936E29F5A7D500399A1F /* ImageTableViewCell.swift */; };
+		4DBA937329F5A81D00399A1F /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA937229F5A81D00399A1F /* ImageDetailsViewController.swift */; };
+		4DBA937529F5B1C700399A1F /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA937429F5B1C700399A1F /* ImageTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24CDE7AA040AB1D56C027947 /* Pods_Hackaton_PJ_03_Flicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackaton_PJ_03_Flicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBA935429F4D83200399A1F /* Hackaton-PJ-03-Flicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackaton-PJ-03-Flicker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBA935729F4D83200399A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DBA935929F4D83200399A1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4DBA935B29F4D83200399A1F /* BeforeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeViewController.swift; sourceTree = "<group>"; };
+		4DBA936029F4D83300399A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DBA936329F4D83300399A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DBA936529F4D83300399A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DBA936E29F5A7D500399A1F /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		4DBA937229F5A81D00399A1F /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
+		4DBA937429F5B1C700399A1F /* ImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		EAE17BC4BD99E819A4C2895E /* Pods-Hackaton-PJ-03-Flicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackaton-PJ-03-Flicker.debug.xcconfig"; path = "Target Support Files/Pods-Hackaton-PJ-03-Flicker/Pods-Hackaton-PJ-03-Flicker.debug.xcconfig"; sourceTree = "<group>"; };
+		EB93399CEAFA7E64464652CE /* Pods-Hackaton-PJ-03-Flicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackaton-PJ-03-Flicker.release.xcconfig"; path = "Target Support Files/Pods-Hackaton-PJ-03-Flicker/Pods-Hackaton-PJ-03-Flicker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DBA935129F4D83200399A1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4172AC43594A776CD023DCA9 /* Pods_Hackaton_PJ_03_Flicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DBA934B29F4D83200399A1F = {
+			isa = PBXGroup;
+			children = (
+				4DBA935629F4D83200399A1F /* Hackaton-PJ-03-Flicker */,
+				4DBA935529F4D83200399A1F /* Products */,
+				F584E59791B0AA10DB90C529 /* Pods */,
+				9C1E75B1C0A083FA10586E17 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DBA935529F4D83200399A1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DBA935429F4D83200399A1F /* Hackaton-PJ-03-Flicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DBA935629F4D83200399A1F /* Hackaton-PJ-03-Flicker */ = {
+			isa = PBXGroup;
+			children = (
+				4DBA936D29F5A64400399A1F /* Controller */,
+				4DBA936C29F5A63E00399A1F /* View */,
+				4DBA936B29F5A63800399A1F /* Model */,
+				4DBA935729F4D83200399A1F /* AppDelegate.swift */,
+				4DBA935929F4D83200399A1F /* SceneDelegate.swift */,
+				4DBA936029F4D83300399A1F /* Assets.xcassets */,
+				4DBA936529F4D83300399A1F /* Info.plist */,
+			);
+			path = "Hackaton-PJ-03-Flicker";
+			sourceTree = "<group>";
+		};
+		4DBA936B29F5A63800399A1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DBA936C29F5A63E00399A1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DBA936E29F5A7D500399A1F /* ImageTableViewCell.swift */,
+				4DBA936229F4D83300399A1F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DBA936D29F5A64400399A1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DBA937029F5A7E500399A1F /* CommonScreen */,
+				4DBA937129F5A7FD00399A1F /* DetailsScreen */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4DBA937029F5A7E500399A1F /* CommonScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4DBA935B29F4D83200399A1F /* BeforeViewController.swift */,
+				4DBA937429F5B1C700399A1F /* ImageTableViewController.swift */,
+			);
+			path = CommonScreen;
+			sourceTree = "<group>";
+		};
+		4DBA937129F5A7FD00399A1F /* DetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4DBA937229F5A81D00399A1F /* ImageDetailsViewController.swift */,
+			);
+			path = DetailsScreen;
+			sourceTree = "<group>";
+		};
+		9C1E75B1C0A083FA10586E17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24CDE7AA040AB1D56C027947 /* Pods_Hackaton_PJ_03_Flicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F584E59791B0AA10DB90C529 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAE17BC4BD99E819A4C2895E /* Pods-Hackaton-PJ-03-Flicker.debug.xcconfig */,
+				EB93399CEAFA7E64464652CE /* Pods-Hackaton-PJ-03-Flicker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DBA935329F4D83200399A1F /* Hackaton-PJ-03-Flicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DBA936829F4D83300399A1F /* Build configuration list for PBXNativeTarget "Hackaton-PJ-03-Flicker" */;
+			buildPhases = (
+				EE5688E7B0FA11447C99C4A6 /* [CP] Check Pods Manifest.lock */,
+				4DBA935029F4D83200399A1F /* Sources */,
+				4DBA935129F4D83200399A1F /* Frameworks */,
+				4DBA935229F4D83200399A1F /* Resources */,
+				CB81AC3EF8F898E3A90E51EC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hackaton-PJ-03-Flicker";
+			productName = "Hackaton-PJ-03-Flicker";
+			productReference = 4DBA935429F4D83200399A1F /* Hackaton-PJ-03-Flicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DBA934C29F4D83200399A1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4DBA935329F4D83200399A1F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4DBA934F29F4D83200399A1F /* Build configuration list for PBXProject "Hackaton-PJ-03-Flicker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DBA934B29F4D83200399A1F;
+			productRefGroup = 4DBA935529F4D83200399A1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DBA935329F4D83200399A1F /* Hackaton-PJ-03-Flicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DBA935229F4D83200399A1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DBA936429F4D83300399A1F /* LaunchScreen.storyboard in Resources */,
+				4DBA936129F4D83300399A1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB81AC3EF8F898E3A90E51EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackaton-PJ-03-Flicker/Pods-Hackaton-PJ-03-Flicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackaton-PJ-03-Flicker/Pods-Hackaton-PJ-03-Flicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackaton-PJ-03-Flicker/Pods-Hackaton-PJ-03-Flicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5688E7B0FA11447C99C4A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackaton-PJ-03-Flicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DBA935029F4D83200399A1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DBA935C29F4D83200399A1F /* BeforeViewController.swift in Sources */,
+				4DBA937529F5B1C700399A1F /* ImageTableViewController.swift in Sources */,
+				4DBA936F29F5A7D500399A1F /* ImageTableViewCell.swift in Sources */,
+				4DBA935829F4D83200399A1F /* AppDelegate.swift in Sources */,
+				4DBA935A29F4D83200399A1F /* SceneDelegate.swift in Sources */,
+				4DBA937329F5A81D00399A1F /* ImageDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DBA936229F4D83300399A1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DBA936329F4D83300399A1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DBA936629F4D83300399A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DBA936729F4D83300399A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DBA936929F4D83300399A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE17BC4BD99E819A4C2895E /* Pods-Hackaton-PJ-03-Flicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JQPLE5ZEK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hackaton-PJ-03-Flicker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Flicker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Flicker.Hackaton-PJ-03-Flicker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4DBA936A29F4D83300399A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB93399CEAFA7E64464652CE /* Pods-Hackaton-PJ-03-Flicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JQPLE5ZEK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hackaton-PJ-03-Flicker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Flicker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Flicker.Hackaton-PJ-03-Flicker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DBA934F29F4D83200399A1F /* Build configuration list for PBXProject "Hackaton-PJ-03-Flicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DBA936629F4D83300399A1F /* Debug */,
+				4DBA936729F4D83300399A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DBA936829F4D83300399A1F /* Build configuration list for PBXNativeTarget "Hackaton-PJ-03-Flicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DBA936929F4D83300399A1F /* Debug */,
+				4DBA936A29F4D83300399A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DBA934C29F4D83200399A1F /* Project object */;
+}

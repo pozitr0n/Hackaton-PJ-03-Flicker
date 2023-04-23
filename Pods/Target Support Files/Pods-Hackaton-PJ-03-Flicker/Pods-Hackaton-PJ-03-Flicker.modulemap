@@ -1,0 +1,6 @@
+framework module Pods_Hackaton_PJ_03_Flicker {
+  umbrella header "Pods-Hackaton-PJ-03-Flicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
