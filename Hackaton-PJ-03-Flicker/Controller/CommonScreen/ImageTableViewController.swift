@@ -9,6 +9,8 @@ import UIKit
 
 class ImageTableViewController: UIViewController {
 
+    var imgSelected: UIImageView? = nil
+
     let searchField: UITextField = {
         
         let searchField = UITextField()
@@ -49,11 +51,15 @@ class ImageTableViewController: UIViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         DispatchQueue.main.async {
-            self.navigationController?.pushViewController(ImageDetailsViewController(), animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
+            
+            let imageDetailsViewController = ImageDetailsViewController(currentImage: UIImage(named: "logo_error")!)
+            self.navigationController?.pushViewController(imageDetailsViewController, animated: true)
+            
         }
         
     }
-    
+
     func setupLayout() {
         
         view.backgroundColor = .lightGray
@@ -66,6 +72,8 @@ class ImageTableViewController: UIViewController {
         let tableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
        
         tableView.backgroundColor = .lightGray
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+
         tableView.translatesAutoresizingMaskIntoConstraints = false
 
         tableView.register(ImageTableViewCell.self, forCellReuseIdentifier: ImageTableViewCell.identifier)
@@ -99,7 +107,7 @@ class ImageTableViewController: UIViewController {
         ])
         
     }
-    
+
 }
 
 extension ImageTableViewController: UITextFieldDelegate {
@@ -120,7 +128,11 @@ extension ImageTableViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -130,7 +142,12 @@ extension ImageTableViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
+        cell.setFirstImage(image: UIImage(named: "logo_error")!)
+        cell.setSecondImage(image: UIImage(named: "logo_error")!)
+        cell.setThirdImage(image: UIImage(named: "logo_error")!)
+    
         return cell
+        
     }
     
 }
