@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BeforeViewController.swift
 //  Hackaton-PJ-03-Flicker
 //
 //  Created by Raman Kozar on 23/04/2023.
@@ -7,6 +7,8 @@
 
 import UIKit
 
+// Start application view controller for the beautiful animation
+//
 class BeforeViewController: UIViewController {
 
     private let imageView: UIImageView = {
@@ -25,11 +27,11 @@ class BeforeViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
            
-            let imageTableViewController = ImageTableViewController()
-            imageTableViewController.modalTransitionStyle = .crossDissolve
-            imageTableViewController.modalPresentationStyle = .fullScreen
+            let imageCollectionViewController = ImageCollectionViewController()
+            imageCollectionViewController.modalTransitionStyle = .crossDissolve
+            imageCollectionViewController.modalPresentationStyle = .fullScreen
             
-            self.navigationController?.pushViewController(imageTableViewController, animated: false)
+            self.navigationController?.pushViewController(imageCollectionViewController, animated: false)
             
         })
         

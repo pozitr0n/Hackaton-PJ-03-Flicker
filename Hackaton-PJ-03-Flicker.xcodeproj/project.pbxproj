@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		4172AC43594A776CD023DCA9 /* Pods_Hackaton_PJ_03_Flicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CDE7AA040AB1D56C027947 /* Pods_Hackaton_PJ_03_Flicker.framework */; };
+		4D23BAD929F732DF00B9CCE6 /* FlickerMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D23BAD829F732DF00B9CCE6 /* FlickerMethods.swift */; };
 		4DBA935829F4D83200399A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA935729F4D83200399A1F /* AppDelegate.swift */; };
 		4DBA935A29F4D83200399A1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA935929F4D83200399A1F /* SceneDelegate.swift */; };
 		4DBA935C29F4D83200399A1F /* BeforeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA935B29F4D83200399A1F /* BeforeViewController.swift */; };
 		4DBA936129F4D83300399A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBA936029F4D83300399A1F /* Assets.xcassets */; };
 		4DBA936429F4D83300399A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBA936229F4D83300399A1F /* LaunchScreen.storyboard */; };
-		4DBA936F29F5A7D500399A1F /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA936E29F5A7D500399A1F /* ImageTableViewCell.swift */; };
+		4DBA936F29F5A7D500399A1F /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA936E29F5A7D500399A1F /* ImageCollectionViewCell.swift */; };
 		4DBA937329F5A81D00399A1F /* ImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA937229F5A81D00399A1F /* ImageDetailsViewController.swift */; };
-		4DBA937529F5B1C700399A1F /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA937429F5B1C700399A1F /* ImageTableViewController.swift */; };
+		4DBA937529F5B1C700399A1F /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBA937429F5B1C700399A1F /* ImageCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24CDE7AA040AB1D56C027947 /* Pods_Hackaton_PJ_03_Flicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackaton_PJ_03_Flicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D23BAD829F732DF00B9CCE6 /* FlickerMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerMethods.swift; sourceTree = "<group>"; };
 		4DBA935429F4D83200399A1F /* Hackaton-PJ-03-Flicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackaton-PJ-03-Flicker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBA935729F4D83200399A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DBA935929F4D83200399A1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,9 +29,9 @@
 		4DBA936029F4D83300399A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DBA936329F4D83300399A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DBA936529F4D83300399A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DBA936E29F5A7D500399A1F /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		4DBA936E29F5A7D500399A1F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4DBA937229F5A81D00399A1F /* ImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsViewController.swift; sourceTree = "<group>"; };
-		4DBA937429F5B1C700399A1F /* ImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		4DBA937429F5B1C700399A1F /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		EAE17BC4BD99E819A4C2895E /* Pods-Hackaton-PJ-03-Flicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackaton-PJ-03-Flicker.debug.xcconfig"; path = "Target Support Files/Pods-Hackaton-PJ-03-Flicker/Pods-Hackaton-PJ-03-Flicker.debug.xcconfig"; sourceTree = "<group>"; };
 		EB93399CEAFA7E64464652CE /* Pods-Hackaton-PJ-03-Flicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackaton-PJ-03-Flicker.release.xcconfig"; path = "Target Support Files/Pods-Hackaton-PJ-03-Flicker/Pods-Hackaton-PJ-03-Flicker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 		4DBA936B29F5A63800399A1F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4D23BAD829F732DF00B9CCE6 /* FlickerMethods.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -88,7 +91,7 @@
 		4DBA936C29F5A63E00399A1F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4DBA936E29F5A7D500399A1F /* ImageTableViewCell.swift */,
+				4DBA936E29F5A7D500399A1F /* ImageCollectionViewCell.swift */,
 				4DBA936229F4D83300399A1F /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -107,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				4DBA935B29F4D83200399A1F /* BeforeViewController.swift */,
-				4DBA937429F5B1C700399A1F /* ImageTableViewController.swift */,
+				4DBA937429F5B1C700399A1F /* ImageCollectionViewController.swift */,
 			);
 			path = CommonScreen;
 			sourceTree = "<group>";
@@ -252,11 +255,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DBA935C29F4D83200399A1F /* BeforeViewController.swift in Sources */,
-				4DBA937529F5B1C700399A1F /* ImageTableViewController.swift in Sources */,
-				4DBA936F29F5A7D500399A1F /* ImageTableViewCell.swift in Sources */,
+				4DBA937529F5B1C700399A1F /* ImageCollectionViewController.swift in Sources */,
+				4DBA936F29F5A7D500399A1F /* ImageCollectionViewCell.swift in Sources */,
 				4DBA935829F4D83200399A1F /* AppDelegate.swift in Sources */,
 				4DBA935A29F4D83200399A1F /* SceneDelegate.swift in Sources */,
 				4DBA937329F5A81D00399A1F /* ImageDetailsViewController.swift in Sources */,
+				4D23BAD929F732DF00B9CCE6 /* FlickerMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

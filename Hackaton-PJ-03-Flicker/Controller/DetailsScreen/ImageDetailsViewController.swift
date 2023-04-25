@@ -7,6 +7,8 @@
 
 import UIKit
 
+// Main details view controller
+//
 class ImageDetailsViewController: UIViewController {
 
     var currentImage: UIImage
@@ -14,7 +16,7 @@ class ImageDetailsViewController: UIViewController {
     let flickerImage: UIImageView = {
         
         let flickerImage = UIImageView()
-        flickerImage.frame = CGRect(x: 0, y: 0, width: 300.0, height: 300.0)
+        flickerImage.contentMode = .scaleAspectFit
         flickerImage.translatesAutoresizingMaskIntoConstraints = false
         
         return flickerImage
@@ -48,9 +50,11 @@ class ImageDetailsViewController: UIViewController {
     
     func configureUI() {
         
-        NSLayoutConstraint.activate(
-            [flickerImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-             flickerImage.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        NSLayoutConstraint.activate([
+            flickerImage.widthAnchor.constraint(equalToConstant: 350.0),
+            flickerImage.heightAnchor.constraint(equalToConstant: 350.0),
+            flickerImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            flickerImage.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
         
     }
