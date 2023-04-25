@@ -11,6 +11,8 @@
 
 ### The application has full navigation.
 
+### The application implements a caching mechanism using CoreData.
+
 ## All the results of the working of the application:
 ![Image alt](https://github.com/pozitr0n/Hackaton-PJ-03-Flicker/raw/main/images/Pic1.png)
 
