@@ -28,6 +28,7 @@ class BeforeViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
            
             let imageCollectionViewController = ImageCollectionViewController()
+            
             imageCollectionViewController.modalTransitionStyle = .crossDissolve
             imageCollectionViewController.modalPresentationStyle = .fullScreen
             
