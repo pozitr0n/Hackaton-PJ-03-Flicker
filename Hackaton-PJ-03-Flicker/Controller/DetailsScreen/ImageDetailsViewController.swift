@@ -33,8 +33,10 @@ class ImageDetailsViewController: UIViewController {
     }
     
     init(currentImage: UIImage) {
+        
         self.currentImage = currentImage
         super.init(nibName: nil, bundle: nil)
+        
     }
     
     required init?(coder: NSCoder) {
