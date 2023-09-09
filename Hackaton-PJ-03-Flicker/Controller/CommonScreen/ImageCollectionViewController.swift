@@ -125,6 +125,7 @@ class ImageCollectionViewController: UIViewController {
             collectionView.deselectItem(at: indexPath, animated: true)
             
             let currentURL = imageURLs[indexPath.row]
+            
             guard let cachedImage = imageCache.object(forKey: currentURL as AnyObject) as? UIImage else {
                 return
             }
