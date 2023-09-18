@@ -35,8 +35,10 @@ class ImageCollectionViewCell: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
+        
         super.prepareForReuse()
         flickerImage.image = nil
+        
     }
 
     func setupLayout() {
