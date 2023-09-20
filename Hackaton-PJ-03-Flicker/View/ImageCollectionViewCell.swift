@@ -69,8 +69,10 @@ class ImageCollectionViewCell: UICollectionViewCell {
             FlickerAPI().getImageByURL(from: urlToImage) { data, response, error in
                 
                 guard let data = data , error == nil else {
+                    
                     print("failed downloading image by URK: \(urlToImage)")
                     return
+                    
                 }
                 
                 DispatchQueue.main.async {
